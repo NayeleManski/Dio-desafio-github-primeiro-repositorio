@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex flow</title>
+    <style> 
+        .flex-container{
+            display: flex; 
+            border: 2px solid black ;
+            max-width: 500px;
+            margin-bottom: 10px;}
+            <!--Display can be flex or inline-flex
+            Border is the line that draws the box -container
+            Width -largura -max -min -how wide can the box be
+            margin -pendente de explicacao-->
+            
+        .default{
+            flex-flow: row nowrap;}
+            <!--flex-flow specifies the direction of a flex container, as well as its wrapping behavior
+            It starts with row -em fileira -or column -em coluna, row means first to last, row-reverse means last to first
+            Wrap -quebra de linha ou quebra de coluna- in case of the items are larger then the max-widht of the container-->    
+                
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+        }
+        </style>
+</head>
+<body>
+    <h1>default: row nowrap</h1>
+    <div class="flex-container default">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div> 
+        <div class="item">4</div>
+        <div class="item">5</div>   
+    </div>
+    
+</body>
+</html>
